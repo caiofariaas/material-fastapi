@@ -21,3 +21,5 @@
 ### Ele nos mostra a mensagem que programamos, um código 200 de sucesso e nos retorna o usuário que foi criado!
 
 <img src="../img/response.png">
+
+### Siga para o passo 3 e daremos continuidade a nossa API!

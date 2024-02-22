@@ -6,7 +6,7 @@
 # HTTPException é usado especificamente em FastAPI para  retornar respostas HTTP com códigos de status personalizados e mensagens de erro!
 
 from fastapi import FastAPI, HTTPException
-from passo1 import Usuario
+from models import Usuario
 
 # Esta instancia representa a nossa aplicação FastAPI, através dela que podemos criar todos os métodos e requisições!
 

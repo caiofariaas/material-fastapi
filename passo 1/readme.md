@@ -9,4 +9,4 @@
 #### Instalação das bibliotecas necessárias
 `pip install fastapi uvicorn`
 
-#### Após a instalação, siga para o arquivo 'passo1.py'!
+#### Após a instalação, siga para o arquivo 'models.py'!
