@@ -49,5 +49,32 @@ async def excluir_usuario(usuario_id: int):
     
     if usuario_id not in database:
         raise HTTPException(status_code=404, detail="Usuário não encontrado")
+    
+    # Deletando da base de dados
+    
     del database[usuario_id]
+    
     return {"message": "Usuário excluído com sucesso"}
+
+
+# Método UPDATE(put)
+
+# Para fazer o update, nós também passamos um parametro na URL do método, sendo ele o id do usuário que desejamos atualizar
+# porem, note que nos parametros da função, nós passamos um id e tambem um usuário completo
+
+# este usuário completo que passamos é aonde estará os dados atualizados do nosso usuário
+
+@app.put("/usuarios/{usuario_id}")
+async def atualizar_usuario(usuario_id: int, usuario: Usuario):
+    
+    # Faz a verificação se caso o usuário existe, e se sim ele apenas substitui as informações antigas pelas novas!
+    
+    if usuario_id not in database:
+        
+        raise HTTPException(status_code=404, detail="Usuário não encontrado")
+    
+    database[usuario_id] = usuario
+    
+    return {"message": "Usuário atualizado com sucesso", "usuario": usuario}
+
+# E agora sua API está pronta!!
