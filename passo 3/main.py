@@ -55,3 +55,5 @@ async def buscar_usuario(usuario_id: int):
     # caso o id exista, nós retornamos este usuário!
     
     return database[usuario_id]
+
+# Você já pode seguir para o ultimo passo!
