@@ -46,8 +46,8 @@ async def ver_usuarios():
 @app.get("/usuarios/{usuario_id}")
 async def buscar_usuario(usuario_id: int):
     
-    # Aqui nós basicamente verificamos se esse id existe na nossa base de dados
-    # caso não exita nós retornamos um erro 404, e como detalhe 'Usuario não encontrado'
+    # Aqui nós basicamente verificamos se esse ID existe na nossa base de dados
+    # caso não exista, nós retornamos um erro 404 e como detalhe 'Usuario não encontrado'
     
     if usuario_id not in database:
         raise HTTPException(status_code=404, detail="Usuário não encontrado")
