@@ -27,3 +27,5 @@ class Usuario(BaseModel):
         # se não, retornamos o valor e pronto!
         
         return value
+
+# Faça o teste no Swagger! tente criar um usuário com uma idade igual ou menor a 0 usando o POST que criamos no primeiro passo!
