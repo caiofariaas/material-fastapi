@@ -22,4 +22,7 @@
 
 <img src="../img/response.png">
 
+
+### A partir daqui, todos os métodos serão testados usando ele!
+
 ### Siga para o passo 3 e daremos continuidade a nossa API!

@@ -26,4 +26,4 @@ class Usuario(BaseModel):
     email: str
     age: int = None
     
-# Siga para o arquivo 'mainPasso1.py'!
+# Siga para o arquivo 'main.py'!
